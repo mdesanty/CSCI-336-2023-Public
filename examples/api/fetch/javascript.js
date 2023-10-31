@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  getActivity();
+  getEmoji();
 });
 
-const getActivity = () => {
+const getEmoji = () => {
   fetch('https://emojihub.yurace.pro/api/random')
     .then(function(response) {
       /*

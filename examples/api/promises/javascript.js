@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
   const turnRedBtn = document.getElementById('turn-red-btn');
   turnRedBtn.onclick = () => {
+    /*
+    * When you run this, note the order of the console output. Since the the promise is settled asynchronously,
+    * the order of the output will be:
+    * 'Here we go...'
+    * 'All done!'
+    * 'Success! It is red now'
+    */
+    console.clear();
     console.log('Here we go...');
+
     turnRed().then(
       function(result) {
         console.log(result);
