@@ -28,7 +28,7 @@ const turnRed = () => {
     const title = document.getElementById('title');
 
     if(!title.classList.contains('bg-red')) {
-      title.classList.remove('bg-info');
+      title.classList.remove('bg-green');
       title.classList.add('bg-red');
       resolve('Success! It is red now');
     }
