@@ -8,11 +8,9 @@ function GreetingPage() {
     {greeting: 'Yo', firstName: 'Dwight', lastName: 'Schrute'}
   ]);
 
-  const [formData, setFormData] = useState({greeting: '', firstName: '', lastName: ''});
-
   return (
-    <div>
-      <div id="greetings">
+    <div id="greetings">
+      <div id="container">
         {greetings.map((greeting, index) =>
           <Greeting key={index} greeting={greeting.greeting} firstName={greeting.firstName} lastName={greeting.lastName} />
         )}
